@@ -1,0 +1,62 @@
+**Title:** The Cognitive Quad (C4): A Mathematical Framework for Composable, Introspective Multi-Agent Reasoning  
+**Author:** Erkan Yalcinkaya  
+**DOI:** https://doi.org/10.5281/zenodo.17690760
+**Status:** White paper and LaTeX formulation
+
+### Summary
+
+C4 is a mathematical framework for building multi-agent AI systems with structured cognition, introspection,
+coordination, and bounded recursion, aimed at making agentic AI systems more predictable, auditable, and
+safe.
+
+### Problem Addressed
+
+Current multi-agent AI approaches tend to be:
+
+- Ad hoc and loosely structured in their reasoning patterns  
+- Difficult to analyse or verify formally  
+- Vulnerable to unbounded recursion and emergent instabilities  
+- Lacking in introspective capability and self-correction  
+- Poorly aligned with safety or governance requirements
+
+This makes it challenging to deploy agent-based systems in safety-sensitive or security-critical contexts.
+
+### Approach
+
+C4 defines four cognitive primitives:
+
+1. **Perception** — how agents ingest, normalise, and contextualise inputs  
+2. **Reasoning** — structured internal deliberation over a cognitive state graph  
+3. **Coordination** — protocols for communication and joint decision-making between agents  
+4. **Introspection** — mechanisms for self-evaluation, error detection, and adjustment
+
+The framework incorporates:
+
+- Dynamic cognitive profiling and stress-adaptive matrices  
+- Cognitive Complementarity Index (CCI) and team diversity metrics  
+- Bounded recursion and controlled deliberation depth  
+- Parallel cognitive dimension processors and coordination clocks
+
+These structures provide a basis for rigorous analysis of multi-agent behaviour and for integrating
+agentic systems with EBDP/EFI and CFS.
+
+### Key Contributions (Novel)
+
+- Formal cognitive state representation for agentic AI systems  
+- Introspection operators and metrics for self-assessment and self-correction  
+- Independence and complementarity measures for multi-agent teams (CCI, team diversity)  
+- Stress-adaptive cognitive modelling and dynamic cognitive profiling  
+- Integration points to EBDP/EFI (entropy constraints) and CFS (independence constraints)
+
+### Target Applications
+
+- Multi-agent orchestration in complex enterprises  
+- Agent-based SOC automation and cyber defence  
+- Oversight, governance, and assurance of agentic AI deployments  
+- Simulation frameworks for cognitive diversity in human-AI teams  
+- Research platforms for reasoning, introspection, and coordination mechanisms
+
+### Citation
+
+Yalcinkaya, E. (2025). The Cognitive Quad - A New Framework for
+Understanding How We Think. Zenodo. https://doi.org/10.5281/zenodo.17690760
