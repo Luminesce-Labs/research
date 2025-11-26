@@ -1,0 +1,128 @@
+Co-prime Factor Security Architecture
+A General Architecture for Engineered Cross-Domain Independence
+
+Author: Erkan Yalcinkaya
+DOI: https://doi.org/10.5281/zenodo.17690358
+Status: Published (Zenodo Report)
+
+⸻
+
+Summary
+
+Coprime-Factor Security (CFS) introduces a quantitative, independence-oriented defence-in-depth model that prevents correlated failures across security layers.
+It does so by engineering structural, informational, and operational coprimeness across systems, vendors, and AI components.
+
+CFS provides a mathematically grounded way to reason about independence, detect latent coupling, and build architectures that remain resilient even when individual subsystems fail.
+
+⸻
+
+Problem Addressed
+
+Enterprise and AI-driven security architectures typically assume that controls are independent.
+In practice, they are not.
+
+Correlations frequently arise from:
+	•	Shared telemetry and data sources
+	•	Shared model biases and training sets
+	•	ML pipeline coupling
+	•	Platform monoculture
+	•	Vendor lock-in
+	•	Identical or mirrored detection logic
+	•	Hidden dependencies across layers
+
+These correlations lead to systemic failure modes, including:
+	•	Compound breaches
+	•	Cross-layer poisoning
+	•	Lateral model hallucination propagation
+	•	Log/telemetry cascades
+	•	Multi-stage compromise chains
+
+Traditional security frameworks do not quantify independence and offer no formal method to prevent correlated collapse.
+
+CFS directly solves this problem.
+
+⸻
+
+Approach
+
+CFS defines an independence-centric security architecture built on:
+
+Coprime Factors
+
+Three orthogonal dimensions:
+	•	Structural (platform, vendor, runtime, language, execution substrate)
+	•	Informational (data sources, feature sets, context windows, training regimes)
+	•	Operational (timing, failure modes, detection logic, adversarial surfaces)
+
+Independence Score (IS)
+
+A quantitative measure of how independent two or more components truly are.
+
+Cross-Model Risk Index (CMRI)
+
+A correlation-aware index estimating the probability of joint failure under shared stressors.
+
+ρ-Bounded Trust Correlation
+
+A formal bound ensuring ρ ≤ ε, preventing unacceptable cross-layer coupling.
+
+Multi-Root Attestation
+
+An extension of safety-inspired multi-root trust architecture (compatible with ASIL-M) to ensure no single compromise can invalidate the entire security stack.
+
+Entropy & Heterogeneity Budgets
+
+Controls that ensure diversity-of-failure, preventing attack paths enabled by monoculture or uniform model behaviour.
+
+⸻
+
+Architectural Insight
+
+Each security control is expressed as a coprime-factor decomposition, analogous to prime factorisation:
+
+If two layers share no coprime factors, they cannot fail in a correlated way.
+
+This enables the construction of provably non-correlated detection and prevention architectures.
+
+CFS supports:
+	•	Independence-engineered defence-in-depth
+	•	Cross-domain trust modelling
+	•	Detection of latent coupling across pipelines
+	•	Mathematical enforcement of independence guarantees
+
+⸻
+
+Key Contributions (Novel)
+	•	A quantitative independence framework for cyber and AI security
+	•	Coprime-factor decomposition for constructing non-correlated control stacks
+	•	Formal ρ-bounded trust correlation model
+	•	IS & CMRI metrics for independence measurement
+	•	Multi-root attestation bridging cyber, AI, and functional safety
+	•	Entropy/heterogeneity budgets to defend against monoculture attacks
+	•	Design patterns for engineered independence in mixed cyber–AI–safety environments
+
+⸻
+
+Target Applications
+
+Cybersecurity & AI Security
+	•	SIEM/SOC pipelines
+	•	Multi-vendor or distributed architectures
+	•	LLM-based detection and response systems
+	•	Agentic AI threat response frameworks
+
+Critical Infrastructure
+	•	Power grid / telecom security
+	•	Multi-region zero-trust architectures
+	•	High-assurance industrial networks
+
+Functional Safety
+	•	Independence modelling for ASIL / IEC 62304 / DO-178C
+	•	Cross-domain safety–cybersecurity alignment
+
+AI Governance
+	•	Monitoring correlated model failures
+	•	Preventing multi-agent cascade dynamics
+
+Yalcinkaya, E. (2025). Coprime-Factor Security Architecture.
+Zenodo. https://doi.org/10.5281/zenodo.17690358
