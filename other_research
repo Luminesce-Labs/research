@@ -1,0 +1,117 @@
+## 1. Correlation Composites for Attack Chains
+
+A pattern for detecting and scoring multi-stage attack chains by correlating events and findings along
+dimensions such as:
+
+- Temporal ordering  
+- Technique and tactic sequences  
+- Lateral movement and privilege escalation  
+- Data staging and exfiltration
+
+This approach links naturally to independence-aware architectures, as it exposes correlated behaviour
+even when local checks appear clean.
+
+## 2. Semantic-Preserving Context Transitions
+
+A structured method for changing topics or shifting context while preserving essential information and
+minimising semantic loss. It typically involves:
+
+- Extracting essential information  
+- Building a semantic summary  
+- Introducing an explicit transition bridge  
+- Acknowledging the shift  
+- Verifying fidelity via metrics
+
+This is applicable to conversational systems, collaborative tools, and any system that must maintain coherent context across transitions.
+
+## 3. AI-to-AI Coaching Protocol
+
+A protocol where AI agents coach other AI agents in methodology selection, instruction design, or
+strategy refinement. The approach involves:
+
+- Agent profiling and capability assessment  
+- Matching agents to methodologies and tools  
+- Generating instructions and evaluating outcomes  
+- Using feedback to improve future selections
+
+This has been shown (in internal evaluations) to significantly reduce suboptimal choices and accelerate
+deployment of complex configurations.
+
+---
+
+## 4. Nine-Dimensional Coherence Monitoring
+
+A context-drift and coherence monitoring method that tracks multiple dimensions of an interaction or
+session, such as semantic alignment, intent, goals, narrative continuity, emotional tone, momentum,
+pattern stability, honesty, and coding standards. It is designed to:
+
+- Detect drift and incoherence early  
+- Warn or intervene when quality degrades  
+- Provide metrics for conversational or log-stream integrity
+
+The method is relevant for long-horizon agentic systems and for high-stakes interactive use cases.
+
+---
+
+## 5. Ensemble ML with Explicit Uncertainty
+
+An architecture that combines multiple model types (e.g., sequence models, transformers, and Bayesian
+components) and explicitly quantifies uncertainty via techniques such as Monte Carlo dropout and
+ensemble variance, with:
+
+- Dynamic re-weighting based on historical performance  
+- Integration into confidence and risk scoring pipelines  
+- Support for downstream decision logic in security and safety contexts
+
+---
+
+## 6. Adaptive Confidence Scoring
+
+A multi-factor confidence model which combines dimensions such as finding quality, indicator richness,
+temporal consistency, correlation strength, and contextual boosts. It is designed so that:
+
+- Weights can be tuned based on observed false positive/false negative characteristics  
+- Uncertainty can be propagated to downstream components  
+- Scoring is robust under varying data quality
+
+This work is especially relevant for CyberIntelX and related security analytics engines.
+
+---
+
+## 7. Evidence-Weighted Vulnerability Scoring
+
+An approach that combines multiple vulnerability-related signals such as traditional CVSS metrics,
+exploit prediction scores, and known exploited vulnerability flags into a single evidence-weighted
+score. This provides:
+
+- A more realistic sense of exploitability and impact  
+- Prioritisation logic for patching and mitigation workflows  
+- Better integration with empirical threat intelligence
+
+It fits naturally into CFS-aligned security architectures.
+
+## 8. Circuit Breakers for External Dependencies
+
+A general pattern for guarding AI systems and security pipelines against external dependency failures,
+featuring:
+
+- Failure thresholds and backoff logic  
+- Graceful degradation modes (e.g., cached or default responses)  
+- Monitoring and alerting on dependency health
+
+This pattern supports robust integration of AxoDen components, threat intelligence feeds, and external
+APIs without destabilising core systems.
+
+---
+
+## 9. Living Intelligence Transformation and Methodology Architectures
+
+Innovations around:
+
+- Treating methodology collections as dynamic, evolving knowledge bases  
+- Using transformation matrices to update knowledge over time  
+- Structuring systems into collection, processing, and interface layers  
+- Benchmarking methods against external frameworks
+
+These ideas strengthen METIS and any system that aims to maintain a rapidly evolving, high-quality
+methodology library.
