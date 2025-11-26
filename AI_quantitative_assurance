@@ -1,0 +1,105 @@
+Entropy-Bounded Data Pipelines and Entropy-Frugal Intelligence
+
+A Compositional Framework for Quantitative Assurance in Industrial AI Systems
+
+Author: Erkan Yalcinkaya
+DOI: https://doi.org/10.5281/zenodo.17709557
+Status: Published (Zenodo Report)
+
+⸻
+
+Summary
+
+This work introduces a unified information-theoretic framework that provides provable, end-to-end guarantees for AI behaviour across distributed data and model pipelines. The approach uses:
+	•	Entropy budgets
+	•	Correlation bounds
+	•	A structured Verification–Safety–Recovery (VSR) architecture
+
+The goal is to ensure that industrial AI systems behave predictably and safely under real-world operational constraints, including adversarial inputs, data drift, and distributed inconsistencies.
+
+⸻
+
+Problem Addressed
+
+Modern, production-grade AI systems lack formal guarantees regarding:
+	•	Propagation and accumulation of uncertainty across multi-stage pipelines
+	•	Information loss, drift, and collapse in data quality
+	•	Hallucination amplification under load, distribution shift, or adversarial scenarios
+	•	Inconsistencies across distributed deployments (multi-region, multi-tenant, cross-jurisdiction)
+	•	Missing compositional certification for complex DAG-shaped pipelines
+
+Existing observability and MLOps tools are reactive: they detect failures after degradation occurs.
+This framework provides preventative, mathematically grounded guarantees over behaviour, safety, and information quality.
+
+⸻
+
+Approach
+
+1. Entropy-Bounded Data Pipelines (EBDP)
+
+A formalism that applies quantitative entropy and information-quality constraints to every pipeline stage.
+Each stage exposes a verifiable contract governing:
+	•	Allowed entropy budget
+	•	Permissible uncertainty
+	•	Expected information throughput
+	•	Tolerances for drift, compression, and transformation
+
+2. Entropy-Frugal Intelligence (EFI)
+
+A modelling approach that ensures inference components operate within controlled entropy and correlation budgets, preventing:
+	•	Overconfident outputs
+	•	Information-destructive transformations
+	•	Inference instability under stress
+
+3. Verification–Safety–Recovery (VSR)
+
+A system-level architecture describing transitions between:
+	•	Verified / nominal operation
+	•	Degraded or safe-mode operation
+	•	Controlled recovery with full auditability
+
+VSR defines formal safety envelopes and ensures failures remain bounded, predictable, and reversible.
+
+⸻
+
+Architectural Properties
+
+The framework supports arbitrary directed acyclic graph (DAG) pipelines, including:
+	•	Parallel branches
+	•	Merge points
+	•	Skip connections
+	•	Multi-modal processing chains
+	•	Multi-region distributed pipelines
+
+Each component exposes a contract, and contracts compose algebraically.
+This enables system-level guarantees to be derived from independently verified parts.
+
+⸻
+
+Key Contributions
+	•	Information-theoretic framework for certifiable AI behaviour in complex pipelines
+	•	Algebraic composition technique for combining verified components
+	•	Generalised DAG safety model for parallel, merged, and skipped execution paths
+	•	Stochastic certification protocol with configurable confidence levels
+	•	Entropy-aware runtime machinery for autoscaling, backpressure, and information-quality enforcement
+	•	Mechanisms to halt hallucination propagation and prevent uncertainty amplification
+	•	Formal VSR architecture for bounded degradation and auditable recovery
+	•	Multi-objective optimisation over entropy, latency, cost, and reliability
+
+⸻
+
+Target Applications
+
+This framework applies to high-assurance AI domains, including:
+	•	Autonomous driving and robotics (ISO 26262)
+	•	Medical AI and clinical decision support (IEC 62304)
+	•	Aviation / avionics systems (DO-178C / DO-254)
+	•	AI security, SOC automation, cybersecurity analytics
+	•	Agentic AI governance, alignment, and oversight
+	•	Financial model risk management (e.g., SR 11-7)
+	•	Telecom and multi-region data pipelines (NIS2 compliance)
+	•	Industrial automation, manufacturing, critical infrastructure
+
+Yalcinkaya, E. (2025). Entropy-Bounded Data Pipelines and Entropy-Frugal Intelligence:
+A Compositional Framework for Quantitative Assurance in Industrial AI Systems.
+Zenodo. https://doi.org/10.5281/zenodo.17709557
