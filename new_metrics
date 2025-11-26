@@ -1,0 +1,48 @@
+**Title:** Independence Score (IS) and Cross-Model Risk Index (CMRI):  
+Metrics for Quantifying Correlated Risk in AI and Security Systems  
+**Author:** Erkan Yalcinkaya  
+**DOI:** (planned)  
+**Status:** Mathematical specification and integration notes
+
+### Summary
+
+IS and CMRI are quantitative metrics for assessing independence and correlated risk between models,
+components, or security controls, providing a rigorous foundation for independence-aware design.
+
+### Problem Addressed
+
+Many architectures implicitly assume:
+
+- Model ensembles provide diversity  
+- Multiple vendors ensure independence  
+- Layering security components reduces risk
+
+However, without formal metrics, correlated failure modes remain hidden and can cause systemic collapse
+or multi-layer compromise.
+
+### Approach
+
+The work defines:
+
+- **Independence Score (IS)** — an aggregate scalar in [0, 1] that measures the degree of independence
+  between two components along structural, informational, and operational axes.
+- **Cross-Model Risk Index (CMRI)** — a measure of correlated risk that incorporates output correlation,
+  shared data, common failure modes, and error propagation dynamics.
+
+The metrics are designed to be computed from observable attributes and can be used in architecture reviews,
+tooling, and automated assessments.
+
+### Key Contributions (Novel)
+
+- First formal independence metrics explicitly tailored for AI and cyber systems  
+- Unification of correlation, entropy overlap, and dependency analysis into IS/CMRI  
+- Practical bridge between high-level independence theory (CFS) and concrete system scoring  
+- Reusable scoring scheme for ensembles, multi-agent systems, and multi-vendor stacks
+
+### Target Applications
+
+- AI risk and model governance assessments  
+- Ensemble model evaluation and selection  
+- Design reviews for SOC, SIEM, and cyber defence architectures  
+- Safety and compliance preparation (e.g. ISO 26262, NIS2)  
+- Automated evaluation in AxoDen and CyberIntelX tools
