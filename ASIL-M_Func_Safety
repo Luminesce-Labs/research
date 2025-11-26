@@ -1,0 +1,95 @@
+ASIL-M: Functional-Safety–Aligned Framework for Verifiable, Multi-Component AI Certification
+
+Author: Erkan Yalcinkaya
+DOI: https://doi.org/10.5281/zenodo.17680541
+Status: Published (Zenodo Report)
+
+⸻
+
+Summary
+
+ASIL-M introduces a multi-root, independence-driven safety integrity model that extends ISO 26262–style functional-safety assurance to modern AI systems, distributed inference pipelines, and multi-model architectures.
+
+It provides a certifiable structure for AI components whose behaviour is non-deterministic, data-dependent, and prone to cross-component correlation.
+
+⸻
+
+Problem Addressed
+
+Existing safety standards such as ISO 26262, IEC 62304, and DO-178C assume:
+	•	Deterministic software
+	•	Bounded and enumerable state spaces
+	•	Single-root trust chains
+	•	Minimal cross-component correlation
+
+Modern AI systems violate these assumptions:
+	•	Distributed, multi-model pipelines
+	•	Data-dependent behaviour and contextual branching
+	•	Non-deterministic inference
+	•	Shared data and latent coupling between components
+	•	Error propagation across DAG-shaped pipelines
+
+Regulators currently lack a safety-integrity mapping suitable for AI.
+ASIL-M provides that mapping.
+
+⸻
+
+Approach
+
+1. Multi-root Trust Architecture
+
+Defines multiple independent roots of trust rather than a single chain.
+Each root is verified separately and contributes to the global safety envelope.
+
+2. ASIL-M Safety Integrity Layer
+
+Assigns safety integrity levels to AI components using:
+	•	Independence factors
+	•	Correlation analysis
+	•	Behavioural uncertainty profiles
+
+3. Correlation-Aware Risk Propagation
+
+A quantitative model that tracks risk propagation across DAG pipelines, merges, branches, and cross-modal paths.
+
+4. Functional-Safety Mapping
+
+A structured method that binds AI invariants to classical artefacts used in:
+	•	ISO 26262
+	•	IEC 62304
+	•	DO-178C / DO-254
+
+This enables certification bodies to evaluate AI components using familiar processes.
+
+5. Safety Case Templates
+
+A set of reusable structures enabling:
+	•	Bounded-fault arguments
+	•	Independence justification
+	•	Model-behaviour evidence bundles
+	•	End-to-end safety envelopes
+
+⸻
+
+Key Contributions (Novel)
+	•	The first multi-root safety integrity model for distributed AI
+	•	Quantitative, correlation-aware risk propagation
+	•	Independence scoring for AI components and subsystems
+	•	Parent–child safety envelope formulation for compositional verification
+	•	Functional-safety alignment with ISO 26262, IEC 62304, and DO-178C
+	•	Structured, reproducible safety-case generation
+
+⸻
+
+Target Applications
+	•	Autonomous driving stack certification
+	•	Medical diagnosis, triage, and clinical-decision-support AI
+	•	Robotics and industrial automation
+	•	Rail, aviation, and teleoperation safety
+	•	Mixed-criticality AI and hierarchical autonomy systems
+
+⸻
+
+Citation
+Yalcinkaya, E. (2025). ASIL-M: AI Safety Integrity Level - Multi-Root
+Trust Architecture. Zenodo. https://doi.org/10.5281/zenodo.17680541
